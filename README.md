@@ -52,20 +52,22 @@
 
 - Hashes are key value that don't allow nesting within them. Meaning you can't nest hashes within each other.
 
+- Creates or updates hash with specified key and its corresponding value:
+
 `HSET <hash name> <key> <value>`
 
-- Creates or updates hash with specified key and its corresponding value.
+- Returns value from specified hash at specified key:
 
 `HGET <hash name> <key>`
 
-- Returns value from specified hash at specified key.
+- Returns all key-value pairs in the hash:
 
 `HGETALL <hash name>`
 
+- Deletes specified key-value pair:
+
 `HDEL <hash name> <key>`
 
-- Deletes specified key-value pair.
+- Checks if specified hash exists or not:
 
 `HEXISTS <hash name>`
-
-- Checks if specified hash exists or not.
