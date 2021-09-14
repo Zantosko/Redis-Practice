@@ -44,15 +44,47 @@
 
 `DEL <key>`
 
+- Checks if key exists in DB:
+
+`EXISTS <key>`
+
+- Access all keys:
+
+`KEYS *`
+
+- Deletes everything from DB:
+
+`FLUSHALL`
+
+- Clear input:
+
+`clear`
+
 ## Handling Expirations
+
+- You can check the expiration time on items in your DB with the Time To Live command (TTL).
+- If the value returned is -1 then that means no expiration was specified.
+- If the value returned is -2 then that means the item has expired.
+
+- Check time until expiration:
+
+`TTL <key>`
+
+- Set expiration on key:
+
+`EXPIRES <key> <time amount in seconds>`
+
+- Add new key-value pair with an expiration:
+
+`SETEX <key> <time amount in seconds> <value>`
 
 ## Lists
 
-- Similar to a standard array
+- Similar to a standard array or list.
 
 ## Sets
 
-- A sets is list of unique items.
+- A set is list of unique items.
 
 - Adds value to the set if it exist, if it does not exits then the set will automatically be created:
 
