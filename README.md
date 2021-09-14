@@ -11,6 +11,8 @@
 - Redis isn't typically used as a persistent database like PostgreSQL or MongoDB. Instead it's used for caching.
 - So if you have expensive computations that you make consitently you can store those inside of Redis for quicker access next time.
 - Redis will almost always be built on top of a traditional database. Instead of consistently making expensive queries to your traditional DB you can quickly check Redis to see if data already exists there, saving you hundreds to thousands of milliseconds.
+- When writing Redis commands it's best practice to write the command name in all-caps simimlar to SQL.
+- Everything stored in Redis will be of type string.
 
 ## Basic Redis Commands
 
@@ -25,6 +27,22 @@
 - Exit Redis CLI tool:
 
 `exit` or `quit`
+
+- Create new key-value pair in Redis:
+
+`SET <key> <value>`
+
+- Access value:
+
+`GET <key>`
+
+- Check if value exists in DB:
+
+`GET <key> <value>`
+
+- Deletes key-value pair:
+
+`DEL <key>`
 
 ## Handling Expirations
 
