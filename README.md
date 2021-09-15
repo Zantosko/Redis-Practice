@@ -82,6 +82,22 @@
 
 - Similar to a standard array or list.
 
+- Add item to the beginning of list:
+
+`LPUSH <key> <value>`
+
+- Add item to the end of list:
+
+`RPUSH <key> <value>`
+
+- Remove item from the beginning of list:
+
+`LPOP <key> <value>`
+
+- Remove item from the end of list:
+
+`RPOP <key> <value>`
+
 ## Sets
 
 - A set is list of unique items.
