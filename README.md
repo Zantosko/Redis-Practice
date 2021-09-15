@@ -84,19 +84,27 @@
 
 - Add item to the beginning of list:
 
-`LPUSH <key> <value>`
+`LPUSH <list name> <value>`
 
 - Add item to the end of list:
 
-`RPUSH <key> <value>`
+`RPUSH <list name> <value>`
 
 - Remove item from the beginning of list:
 
-`LPOP <key> <value>`
+`LPOP <list name> <value>`
 
 - Remove item from the end of list:
 
-`RPOP <key> <value>`
+`RPOP <list name> <value>`
+
+- Access specific range or values from list starting from the left:
+
+`LRANGE <list name> <starting index> <ending index>`
+
+- Access specific range or values from list starting from the right:
+
+`RRANGE <list name> <starting index> <ending index>`
 
 ## Sets
 
