@@ -17,48 +17,37 @@
 ## Basic Redis Commands
 
 - This starts Redis server:
-
-`redis-server`
+  `redis-server`
 
 - Access Redis CLI tool:
-
-`redis-cli`
+  `redis-cli`
 
 - Exit Redis CLI tool:
-
-`exit` or `quit`
+  `exit` or `quit`
 
 - Create new key-value pair in Redis:
-
-`SET <key> <value>`
+  `SET <key> <value>`
 
 - Access value:
-
-`GET <key>`
+  `GET <key>`
 
 - Check if value exists in DB:
-
-`GET <key> <value>`
+  `GET <key> <value>`
 
 - Deletes key-value pair:
-
-`DEL <key>`
+  `DEL <key>`
 
 - Checks if key exists in DB:
-
-`EXISTS <key>`
+  `EXISTS <key>`
 
 - Access all keys:
-
-`KEYS *`
+  `KEYS *`
 
 - Deletes everything from DB:
-
-`FLUSHALL`
+  `FLUSHALL`
 
 - Clear input:
-
-`clear`
+  `clear`
 
 ## Handling Expirations
 
@@ -67,81 +56,64 @@
 - If the value returned is -2 then that means the item has expired.
 
 - Check time until expiration:
-
-`TTL <key>`
+  `TTL <key>`
 
 - Set expiration on key:
-
-`EXPIRES <key> <time amount in seconds>`
+  `EXPIRES <key> <time amount in seconds>`
 
 - Add new key-value pair with an expiration:
-
-`SETEX <key> <time amount in seconds> <value>`
+  `SETEX <key> <time amount in seconds> <value>`
 
 ## Lists
 
 - Similar to a standard array or list.
 
 - Add item to the beginning of list:
-
-`LPUSH <list name> <value>`
+  `LPUSH <list name> <value>`
 
 - Add item to the end of list:
-
-`RPUSH <list name> <value>`
+  `RPUSH <list name> <value>`
 
 - Remove item from the beginning of list:
-
-`LPOP <list name> <value>`
+  `LPOP <list name> <value>`
 
 - Remove item from the end of list:
-
-`RPOP <list name> <value>`
+  `RPOP <list name> <value>`
 
 - Access specific range or values from list starting from the left:
-
-`LRANGE <list name> <starting index> <ending index>`
+  `LRANGE <list name> <starting index> <ending index>`
 
 - Access specific range or values from list starting from the right:
-
-`RRANGE <list name> <starting index> <ending index>`
+  `RRANGE <list name> <starting index> <ending index>`
 
 ## Sets
 
 - A set is list of unique items.
 
 - Adds value to the set if it exist, if it does not exits then the set will automatically be created:
-
-`SADD <set name> <value>`
+  `SADD <set name> <value>`
 
 - Removes value from set:
-
-`SREM <set name> <value>`
+  `SREM <set name> <value>`
 
 - Lists out all values in the set:
-
-`SMEMBERS <set name>`
+  `SMEMBERS <set name>`
 
 ## Hashes
 
 - Hashes are key value that don't allow nesting within them. Meaning you can't nest hashes within each other.
 
 - Creates or updates hash with specified key and its corresponding value:
-
-`HSET <hash name> <key> <value>`
+  `HSET <hash name> <key> <value>`
 
 - Returns value from specified hash at specified key:
-
-`HGET <hash name> <key>`
+  `HGET <hash name> <key>`
 
 - Returns all key-value pairs in the hash:
-
-`HGETALL <hash name>`
+  `HGETALL <hash name>`
 
 - Deletes specified key-value pair:
-
-`HDEL <hash name> <key>`
+  `HDEL <hash name> <key>`
 
 - Checks if specified hash exists or not:
-
-`HEXISTS <hash name>`
+  `HEXISTS <hash name>`
